@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The jQuery Example</title>
+    <script type = "text/javascript" src = "jquery-3.6.0.js"></script>
+    <script type = "text/javascript" language = "javascript">
+$(document).ready(function () {$('#btnSubmit').click(function () {var result = $('input[type="checkbox"]:checked');if (result.length > 0) {var resultString = result.length + " checkboxe(s) checked<br/>";result.each(function () {resultString += $(this).val() + "<br/>";});$('#divResult').html(resultString);}
+else {$('#divResult').html("No checkbox checked");}});});
+      </script>
+<div id = "mydiv">Click on this to see a dialogue box.
+  <input type="button" id="button">
+</div>
+  </head>
+<body style="font-family:Calibri"><br>Skills:<br><br><input type="checkbox" name="skills" value="JavaScript" />JavaScript<br><input type="checkbox" name="skills" value="jQuery" />jQuery<br><input type="checkbox" name="skills" value="C#" />C#<br><input type="checkbox" name="skills" value="VB" />VB<br /><br /><input id="btnSubmit" type="submit" value="submit" /><br /><br /><div id="divResult"></div></body>
+</html>
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The jQuery Example</title>
+    <script type = "text/javascript" src = "jquery-3.6.0.js"></script>
+    <script type = "text/javascript" language = "javascript">
+    $(document).ready(function () {$('#btnSubmit').click(function () {var result = $('input[type="radio"]:checked');if (result.length > 0) {$('#divResult').html(result.val() + " is checked");}else {$('#divResult').html("No radio button checked");}});});
+
+      </script>
+<div id = "mydiv">Click on this to see a dialogue box.
+  <input type="button" id="button">
+</div>
+  </head>
+<body style="font-family:Calibri"><br>Gender :<br><input type="radio" name="Gender" value="Female">Female<br><input type="radio" name="gender" value="Male">Male<br><input id="btnSubmit" type="Submit" value="Submit" /><div id="divResult"></div></body>
+</html>
